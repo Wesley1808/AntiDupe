@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "antidupe",
+  "version": "${version}",
+  "name": "AntiDupe",
+  "description": "A fabric mod that fixes certain duping exploits.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.wesley1808.antidupe.fabric.AntiDupeFabric"
+    ]
+  },
+  "mixins": [
+    "antidupe-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": ">=1.21-"
+  }
+}

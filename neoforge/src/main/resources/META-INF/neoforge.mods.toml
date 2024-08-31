@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/Wesley1808/AntiDupe/issues"
+showAsResourcePack = false
+
+[[mods]]
+modId = "antidupe"
+version = "${version}"
+displayName = "ServerCore"
+displayURL = "https://github.com/Wesley1808/AntiDupe"
+logoFile = "icon.png"
+authors = "Wesley1808"
+
+description = '''
+A neoforge mod that fixes certain duping exploits.
+'''
+
+[[mixins]]
+config = "antidupe.common.mixins.json"
+
+[[dependencies.antidupe]]
+modId = "minecraft"
+required = true
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.antidupe]]
+modId = "neoforge"
+required = true
+versionRange = "[20.2.86,)"
+ordering = "NONE"
+side = "BOTH"

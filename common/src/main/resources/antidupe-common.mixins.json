@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.wesley1808.antidupe.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ServerboundEditBookPacketMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
