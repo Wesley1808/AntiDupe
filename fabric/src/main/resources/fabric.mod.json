@@ -3,7 +3,7 @@
   "id": "antidupe",
   "version": "${version}",
   "name": "AntiDupe",
-  "description": "A fabric mod that fixes certain duping exploits.",
+  "description": "A fabric mod that aims to fix duplication exploits.",
   "authors": [],
   "contact": {},
   "license": "MIT",
