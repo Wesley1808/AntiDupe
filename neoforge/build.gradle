@@ -57,6 +57,10 @@ sourcesJar {
     from commonSources.archiveFile.map { zipTree(it) }
 }
 
+tasks.withType(org.gradle.jvm.tasks.Jar).configureEach {
+    archiveAppendix.set("neoforge")
+}
+
 components.java {
     withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
         skip()

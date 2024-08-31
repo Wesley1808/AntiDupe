@@ -1,4 +1,4 @@
-package me.wesley1808.antidupe.forge;
+package me.wesley1808.antidupe.neoforge;
 
 import me.wesley1808.antidupe.AntiDupe;
 import net.neoforged.fml.common.Mod;

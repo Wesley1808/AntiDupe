@@ -1,6 +1,6 @@
 plugins {
     id "architectury-plugin" version "3.4-SNAPSHOT"
-    id "dev.architectury.loom" version "1.6-SNAPSHOT" apply false
+    id "dev.architectury.loom" version "1.7-SNAPSHOT" apply false
 }
 
 architectury {
@@ -29,7 +29,9 @@ allprojects {
     apply plugin: "maven-publish"
 
     archivesBaseName = rootProject.archives_base_name
-    version = rootProject.mod_version
+    var formattedVersion = "${mod_version}+${minecraft_version}"
+
+    version = formattedVersion
     group = rootProject.maven_group
 
     repositories {
@@ -38,6 +40,10 @@ allprojects {
         // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
         // See https://docs.gradle.org/current/userguide/declaring_repositories.html
         // for more information about repositories.
+    }
+
+    tasks.withType(org.gradle.jvm.tasks.Jar).configureEach {
+        archiveVersion.set(formattedVersion)
     }
 
     tasks.withType(JavaCompile) {
