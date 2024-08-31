@@ -7,7 +7,7 @@ showAsResourcePack = false
 [[mods]]
 modId = "antidupe"
 version = "${version}"
-displayName = "ServerCore"
+displayName = "AntiDupe"
 displayURL = "https://github.com/Wesley1808/AntiDupe"
 logoFile = "icon.png"
 authors = "Wesley1808"
@@ -22,7 +22,7 @@ config = "antidupe.common.mixins.json"
 [[dependencies.antidupe]]
 modId = "minecraft"
 required = true
-versionRange = "[1.21,)"
+versionRange = "[1.20.5,)"
 ordering = "NONE"
 side = "BOTH"
 
